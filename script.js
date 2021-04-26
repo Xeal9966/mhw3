@@ -40,6 +40,7 @@ function onResponse2(response) {
 
 
 function onJSON2(json2) {
+    const mostra=document.querySelector('.articoli');
     console.log(json2);
     dati1=json2
     for(let i=25;i<37;i++){
@@ -55,7 +56,9 @@ function onJSON2(json2) {
         div.appendChild(img);
         div.appendChild(span);
     }
+    mostra.classList.remove('hidden');
     }
+
 
 
 
